@@ -23,12 +23,12 @@
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
 
-            if (username === 'valid_user' && password === 'valid_password') {
-                window.location.href = 'index.html';
-            } else if (username === 'locked_user' && password === 'locked_password') {
-                document.getElementById('error').innerText = 'Your account is locked.';
+            if (username === 'user' && password === 'password') {
+                window.location.href = 'index_usuario.html';
+            } else if (username === 'user_mal' && password === 'password_mal') {
+                document.getElementById('error').innerText = 'Su cuenta esta Bloqueada.';
             } else {
-                document.getElementById('error').innerText = 'Invalid username or password.';
+                document.getElementById('error').innerText = 'username o password incorrectos.';
             }
         }
     </script>

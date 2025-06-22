@@ -1,6 +1,6 @@
-To run this website, you can simply open the HTML files in your web browser. This setup allows you to manually test the login and forgot password functionalities. If you need a local server, you can use a simple HTTP server with Python:
+Ejemplo de un sitio web simple a ser utilizado en la materia de programacion IV
 
 ```
-cd simple_website
+cd ejemplo_website
 python -m http.server 8000
 ```

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lista Usuarios</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <tr>
+                <td>1</td>
+                <td>Juan</td>
+                <td>Pérez</td>
+                <td>juan.perez@gmail.com</td>
+                <td>
+                    <button onclick="editUser(1)">Editar</button>
+                </td>
+                <td>
+                    <button onclick="deleteUser(1)">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>María</td>
+                <td>López</td>
+                <td>maria.lopez@gmail.com</td>
+                <td>
+                    <button onclick="editUser(2)">Editar</button>
+                </td>
+                <td>
+                    <button onclick="deleteUser(2)">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function editUser(id) {
+            alert('Editar usuario con ID: ' + id);
+            // Aquí puedes agregar la lógica para editar el usuario
+        }
+
+        function deleteUser(id) {
+            if (confirm('¿Estás seguro de que quieres eliminar este usuario?')) {
+                alert('Usuario con ID: ' + id + ' eliminado.');
+                // Aquí puedes agregar la lógica para eliminar el usuario
+            }
+        }
+    </script>
+    <a href="index.html">Volver al Inicio</a>
+    <a href="registar_usuario.html">Registrar Nuevo Usuario</a>
+    <a href="login.html">Cerrar Sesión</a>
+    <a href="index_usuario.html">Volver al Usuario</a>
+    <a href="listar_usuario.html">Listar Usuarios</a>
+</body>
+</html>
